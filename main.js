@@ -1,24 +1,30 @@
 $(function () {
-  var pagetop = $("#page_top");
-  pagetop.hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 1200) {
-      pagetop.fadeIn();
+  $("body").hide().fadeIn(500);
+
+  var $nav = $("#navArea");
+  var $btn = $(".toggle_btn");
+  var $mask = $("#mask");
+  var open = "open"; // class
+  // menu open close
+  $btn.on("click", function () {
+    if (!$nav.hasClass(open)) {
+      $nav.addClass(open);
     } else {
-      pagetop.fadeOut();
+      $nav.removeClass(open);
     }
   });
-  pagetop.click(function () {
-    $("body, html").animate({ scrollTop: 0 }, 500);
-    return false;
+  // mask close
+  $mask.on("click", function () {
+    $nav.removeClass(open);
   });
 
+  //
   $('a[href^="#"]').click(function () {
-    let speed = 1000;
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? "html" : href);
-    let position = target.offset().top;
-    $("body,html").animate(
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? "html" : href);
+    var position = target.offset().top;
+    var speed = 1000;
+    $("html, body").animate(
       {
         scrollTop: position,
       },
@@ -28,48 +34,18 @@ $(function () {
     return false;
   });
 
-  $("#products-inner div.products-link:last").prependTo("#products-inner");
-  $("#products-inner").css("margin-left", "-1200px");
+  //
+  // var duration = 300;
 
-  $("#carouselprev").click(function () {
-    $("#carouselnext,#carouselprev").hide();
-    $("#products-inner").animate(
-      {
-        "margin-left":
-          parseInt($("#products-inner").css("margin-left")) + 1200 + "px",
-      },
-      "slow",
-      "swing",
-      function () {
-        $("#products-inner").css("margin-left", "-1200px");
-        $("#products-inner div.products-link:last").prependTo(
-          "#products-inner"
-        );
-        $("#carouselnext,#carouselprev").show();
-      }
-    );
-  });
+  // images ----------------------------------------
+  // var $images = $(".works p");
 
-  $("#carouselnext").click(function () {
-    $("#carouselnext,#carouselprev").hide();
-    $("#products-inner").animate(
-      {
-        "margin-left":
-          parseInt($("#products-inner").css("margin-left")) - 1200 + "px",
-      },
-      "slow",
-      "swing",
-      function () {
-        $("#products-inner").css("margin-left", "-1200px");
-        $("#products-inner div.products-link:first").appendTo(
-          "#products-inner"
-        );
-        $("#carouselnext,#carouselprev").show();
-      }
-    );
-  });
-  $(".more").hide();
-  $(".learnmore").click(function () {
-    $(".more").slideToggle(500);
-  });
+  // images 1つ目の画像
+  // $images
+  //   .on("mouseover", function () {
+  //     $(this).find("strong, span").stop(true).animate({ opacity: 1 }, duration);
+  //   })
+  //   .on("mouseout", function () {
+  //     $(this).find("strong, span").stop(true).animate({ opacity: 0 }, duration);
+  //   });
 });

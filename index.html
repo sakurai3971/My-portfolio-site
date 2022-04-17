@@ -3,547 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BEAUTIFUL STUDIO</title>
-    <link rel="stylesheet" href="https://use.typekit.net/oza0oyu.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>sakurai's portfolio</title>
+    <meta name="description" content="This site is my portfolio site">
   </head>
   <body>
     <header>
-      <div class="top-background">
-        <div class="top-img">
-            <h1><img src="images/img_top.png" alt=""></h1>
+      <div class="wrapper">
+        <div class="nav-box">
+          <a href="index.html">
+            <h1>
+              designer
+              <p>Sakurai<span>Fumihiro</span></p>
+            </h1>
+          </a>
+          <div id="navArea">
+            <nav>
+              <div class="inner">
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="works.html">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+      
+            <div class="toggle_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+      
+            <div id="mask"></div>
+          </div>
+          <ul class="nav_pc">
+            <a href="about.html">
+              <li>About</li>
+            </a>
+            <a href="works.html">
+              <li>Works</li>
+            </a>
+            <a href="#contact">
+              <li>Contact</li>
+            </a>
+          </ul>
         </div>
-        <div>
-          <nav>
-            <ul class="flex">
-              <li class="">
-                <a href="products.html" class="nav-link">
-                  <div class="nav-link_text">
-                    <img src="images/nav/img_nav1.png" alt="ナビゲーションの花画像" class="fllow">
-                    <p class="new">NEW!</p>
-                    <p class="nav-text"><span class="review">クチコミ</span></p>
-                    <p class="nav-text">製品</p>
-                    <img src="images/nav/under.png" alt="下矢印" class="nav-text">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#scroll02" class="nav-link small">
-                  <div class="nav-link_text">
-                    <img src="images/nav/img_nav2.png" alt="ナビゲーションの花画像" class="fllow-small">
-                    <p class="nav-text component">特長成分</p>
-                    <img src="images/nav/under.png" alt="下矢印" class="nav-text">
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#scroll03" class="nav-link small">
-                  <div class="nav-link_text">
-                    <img src="images/nav/img_nav3.png" alt="ナビゲーションの花画像" class="fllow-small">
-                    <p class="nav-text colum">コラム</p>
-                    <img src="images/nav/under.png" alt="下矢印" class="nav-text">
-                  </div> 
-                </a>
-              </li>
-              <li>
-                <a href="#scroll04" class="nav-link">
-                  <div class="nav-link_text">
-                    <img src="images/nav/img_nav4.png" alt="ナビゲーションの花画像" class="fllow">
-                    <p class="nav-text campaign"><span class="review">NEWS</span></p>
-                    <img src="images/nav/under.png" alt="下矢印" class="nav-text">
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="sub-title">
-          <div class="sub-title_text">
-            <h2 class="sub-title-image">
-              ２０代の肌はもっとキレイになれる。
-              <br>ゆらぎ知らずな映える素肌へ。
+        
+        
+      
+        <div class="main-title">
+          <div class="main-title_left">
+            <h2>
+              Sakurai
+              <br>Fumihiro
             </h2>
-              <p class="sub-title_sub-text">
-                『BEAUTIFUL STUDIO』からスキンケア誕生。
+            <p>ものつくりを通し、人と人の繋がり・
+              <p>気持ちや想いを届けるお手伝い。</p>
+            </p>
+          </div>
+          <div class="main-title_right">
+            <img src="images/main-img.jpg" alt="桜の画像">
+          </div>
+        </div>
+        <div class="about-title">
+          <div class="about-title_left">
+            <img src="images/IMG_0993.jpg" alt="自分の写真">
+          </div>
+          <div class="about-title_right">
+            <div class="about-wrapper">
+              <h3>About</h3>
+              <p>わたしについて</p>
+              <p class="about-text">ご覧になっていただきありがとうございます。
+                <br>webデザイナーを目指している櫻井と申します。
+                <br>webサイトを通して、人と人の繋がり・気持ちや想いを届けられる
+                <br>webデザイナーになりたいと考えております。
               </p>
-        </div>
-          </div>
-        </div>
-      </div>
-      <div id="page_top"><a href="#">⬆︎</a>
-    </header>
-    
-    <div class="products" id="scroll01">
-      <h2 class="title">PRODUCTS</h2>
-      <p class="title-text">#製品</p>
-      <div id="carouselwrap">
-        <p id="carouselprev">＜</p>
-        <p id="carouselnext">＞</p>
-        <div id="carousel">
-          <div id="products-inner">
-            <div class="products-link">
-              <a href="buy.html">
-                <img
-                  src="images/products/img_products_carousel_cleansing.png"
-                  alt="クレンジングバーム"
-                />
-                <p class="products-title">クレンジングバーム</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  シャーベットみたいにとろけて <br />素早く肌に馴染むメイク落とし
-                </p>
-                <a href="buy.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_02.html">
-                <img
-                  src="images/products/img_products_carousel_facewash.png"
-                  alt="洗顔パウダー"
-                />
-                <p class="products-title">洗顔パウダー</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  酵素洗顔で、触りたくなる <br />むぎたまご肌へ
-                </p>
-                <a href="buy_02.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_03.html">
-                <img
-                  src="images/products/img_products_carousel_lotion.png"
-                  alt="オイルローション"
-                />
-                <p class="products-title">オイルローション</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  振って混ぜるとオイルボールが <br />はじけるかわいい化粧水
-                </p>
-                <a href="buy_03.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_04.html">
-                <img
-                  src="images/products/img_products_carousel_moisturizing.png"
-                  alt="美容液（うるおい）"
-                />
-                <p class="products-title">美容液（うるおい）</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  カプセルが使う時にはじけ、 <br />美容成分を肌に届ける美容液
-                </p>
-                <a href="buy_04.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_05.html">
-                <img
-                  src="images/products/img_products_carousel_tension.png"
-                  alt="美容液（ハリ・ツヤ）"
-                />
-                <p class="products-title">美容液（ハリ・ツヤ）</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  カプセルが使う時にはじけ、 <br />美容成分を肌に届ける美容液
-                </p>
-                <a href="buy_05.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_06.html">
-                <img
-                  src="images/products/img_products_carousel_cream.png"
-                  alt="オイルローション"
-                />
-                <p class="products-title">カプセルクリーム</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  カプセルがゆっくり肌に溶け <br />優しく包み込むクリーム
-                </p>
-                <a href="buy_06.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy.html">
-                <img
-                  src="images/products/img_products_carousel_cleansing.png"
-                  alt="クレンジングバーム"
-                />
-                <p class="products-title">クレンジングバーム</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  シャーベットみたいにとろけて <br />素早く肌に馴染むメイク落とし
-                </p>
-                <a href="buy.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_02.html">
-                <img
-                  src="images/products/img_products_carousel_facewash.png"
-                  alt="洗顔パウダー"
-                />
-                <p class="products-title">洗顔パウダー</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  酵素洗顔で、触りたくなる <br />むぎたまご肌へ
-                </p>
-                <a href="buy_02.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_03.html">
-                <img
-                  src="images/products/img_products_carousel_lotion.png"
-                  alt="オイルローション"
-                />
-                <p class="products-title">オイルローション</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  振って混ぜるとオイルボールが <br />はじけるかわいい化粧水
-                </p>
-                <a href="buy_03.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_03.html">
-                <img
-                  src="images/products/img_products_carousel_moisturizing.png"
-                  alt="美容液（うるおい）"
-                />
-                <p class="products-title">美容液（うるおい）</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  カプセルが使う時にはじけ、 <br />美容成分を肌に届ける美容液
-                </p>
-                <a href="buy_04.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_04.html">
-                <img
-                  src="images/products/img_products_carousel_tension.png"
-                  alt="美容液（ハリ・ツヤ）"
-                />
-                <p class="products-title">美容液（ハリ・ツヤ）</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  カプセルが使う時にはじけ、 <br />美容成分を肌に届ける美容液
-                </p>
-                <a href="buy_05.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-            <div class="products-link">
-              <a href="buy_05.html">
-                <img
-                  src="images/products/img_products_carousel_cream.png"
-                  alt="オイルローション"
-                />
-                <p class="products-title">カプセルクリーム</p>
-                <p class="products-review">
-                  <img
-                    src="images/star/hosi05.png"
-                    alt="レビュー評価"
-                    class="products-review-img"
-                  />
-                  <span class="products-review-number">5.0</span>
-                </p>
-                <p class="products-text">
-                  カプセルがゆっくり肌に溶け <br />優しく包み込むクリーム
-                </p>
-                <a href="buy_06.html" class="buy-link">購入はこちら</a>
-              </a>
-            </div>
-          </div>
-        </div>
-     </div>
-    </div>
-      <div id="scroll02">
-        <h2 class="title">INGREDIENT</h2>
-        <p class="title-text">#２つの特長成分</p>
-        <p class="title-text">BEAUTIFUL　STUDIOスキンケアには全製品に2つの独自成分が配合されています</p>
-      </div>
-      <div class="ingredient-wrapper">
-        <div class="ingredient">
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_rambutan.png" alt="ランプータンの画像" class="ingredient-image01">
-                  <p class="ingredient-flower01">ランプータン</p>
+              <div class="view">
+                <a href="about.html">
+                  <p>view<span>more</span></p>
+                  <img src="images/arrow.png" alt="矢印の画像">
+                </a>
               </div>
             </div>
-          </div>
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_camellia.png" alt="ツバキ花の画像" class="ingredient-image02">
-                <p>ツバキ花</p>
-              </div>
-            </div>
-          </div>
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_mint.png" alt="カワミドリの画像" class="ingredient-image03">
-                <p>カワミドリ</p>
-              </div>
-            </div>
-          </div>
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_rodiolarosea.png" alt="ロディオの画像" class="ingredient-image01">
-                  <p class="ingredient-flower01">ロディオ</p>
-              </div>
-            </div>
-          </div>
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_rose.png" alt="イブニングビリムの画像" class="ingredient-image01">
-                  <p class="ingredient-flower01">イブニングビリム</p>
-              </div>
-            </div>
-          </div>
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_plum.png" alt="ウメ果実の画像" class="ingredient-image01 plum">
-                  <p class="ingredient-flower01 plum-text">ウメ果実</p>
-              </div>
-            </div>
-          </div>
-          <div class="ingredient-text">
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_lavender.png" alt="ランベンダーの画像" class="ingredient-image01 lavender">
-                  <p class="ingredient-flower01 lavender-text">ランベンダー</p>
-              </div>
-            </div>
-          </div>
-          <div class="ingredient-text"> 
-            <div class="ingredient-item">
-              <div class="ingredient-image_text">
-                <img src="images/ingredient/img_ingredient_starlily.png" alt="スターリリーの画像" class="ingredient-image01 starlily">
-                  <p class="starlily-text">スターリリー</p>
-              </div>
-            </div>
-          </div>
-          <div class="description">
-            <p>「ゆらぎ肌」にアプローチする
-            <br>バランスに着目</p>
-            <p><span>エナジーリリーフ</span></p>
-            <p>肌にうるおいを与えて整え東洋
-            <br>植物の恵を凝縮した独自成分
-            <br>エナジーリリーフを共通成分
-            <br>として配合
-            </p>
-          </div>
-          <div class="description details">
-            <p class="details-text">ラベンダーオイル<span>&</span>
-            <br>スターリリーエキス</p>
-            <p>有機栽培された原材料を使用した
-            <br>シリーズ共通成分
-            </p>
           </div>
         </div>
       </div>
-      <div class="colum-backgroud" id="scroll03">
-        <div class="colum-wrapper">
-          <div class="colum-title">
-            <h2 class="title">COLUM</h2>
-            <p class="title-text">#コラム</p>
-          </div>
-          <div class="colum-item">
-            <div class="colum-image"><img src="images/colum.png" alt="肌で悩んでいる女性の写真"></div>
-            <div class="colum-text-item">
+      <div class="works-wrapper">
+        <div class="title">
+          <h3>Works</h3>
+          <p>制作物</p>
+        </div>
+        <div class="works-item">
+          <div class="works">
+            <a href="banner01.html">
               <p>
-                <h3 class="colum-title_text">２０代の私たちにも『肌悩み』はある</h3>
+                <img src="images/design image/bana01.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
               </p>
-              <p class="colum-text">
-                季節の変わり目や、紫外線、外的刺激、ストレスなどで
-                <br>肌の調子が思わしくない...
-                <br>そんな肌バランスが崩れた状態を『ゆらぎ肌』とわたくし
-                <br>たちは呼んでいます。
-                <br>10代な肌から大人の肌へ変わる20代は、ホルモンバランス
-                <br>や生活習慣が乱れやすく、ゆらぎやすくなりがちと言われます。
-              </p>
-              <p class="cause">
-                『ゆらぎ肌』の原因
-              </p>
-              <div class="stress">
-                <p>・紫外線</p>
-                <p>・気候の変化</p>
-                <p>・ストレス</p>
-                <p>・外的刺激</p>
-              </div>
-            </div>
+            </a>
           </div>
-        </div>
-      </div>
-      <div class="news-backgroud" id="scroll04">
-        <div class="news-wrapper">
-          <div>
-            <h2 class="title">NEWS</h2>
-            <p class="title-text">＃特集</p>
-          </div>
-          <div class="news-item-wrapper">
-            <ul class="news-item">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item more">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item more">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item more">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item more">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-            <ul class="news-item more">
-              <li class="news-list">雑誌掲載</li>
-              <li class="news-list">『・・・2021年１月号』インタービューが掲載されました。</li>
-            </ul>
-              <p class="learnmore">
-                Learn More
-              </p>
-           
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-wrapper">
-        <p>@ 2021 BEAUTIFUL STUDIO</p>
-      </div>
-      <footer>
-        <div class="footer">
-          <div class="footer-products">
-              <h4>PRODUCTS</h4>
-              <ul>
-                <a href="buy.html"><li>クレンジング</li></a>
-                <a href="buy_02.html"><li>洗顔パウダー</li></a>
-                <a href="buy_03.html"><li>オイルローション</li></a>
-                <a href="buy_04.html"><li>美容液(うるおい)</li></a>
-                <a href="buy_05.html"><li>美容液(ハリ・ツヤ)</li></a>
-                <a href="buy_06.html"><li>クリーム</li></a>
-              </ul>
-            
-          </div>
-          <div class="follow">
-              <h4>FOLLOW US</h4>
-              <div class="fllow-img">
-                <a href="#"><img src="images/sns/インスタグラムのシンプルなロゴのアイコン 1.png" alt="インスタグラムのアイコン"></a>
-                <a href="#"><img src="images/sns/YOUTUBE_icon-icons.com_65487.png" alt="インスタグラムのアイコン"></a>
-                <a href="#"><img src="images/sns/social_Twitter_38.png" alt="インスタグラムのアイコン"></a>
-                <a href="#"><img src="images/sns/facebookblacksocialbuttoncircle_79771.png" alt="インスタグラムのアイコン"></a>
-              </div>
-          </div>
-        </div>
-      </footer>
     
-      <script
+          <div class="works">
+            <a href="banner02.html">
+              <p>
+                <img src="images/design image/bana02.png" alt="バナー画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works">
+            <a href="banner03.html">
+              <p>
+                <img src="images/design image/bana03.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works">
+            <a href="banner04.html">
+              <p>
+                <img src="images/design image/bana04.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works">
+            <a href="banner05.html">
+              <p>
+                <img src="images/design image/bana05.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works">
+            <a href="banner06.html">
+              <p>
+                <img src="images/design image/bana06.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works">
+            <a href="banner07.html">
+              <p>
+                <img src="images/design image/bana07.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works">
+            <a href="banner08.html">
+              <p>
+                <img src="images/design image/bana08.png" alt="バナーの画像" />
+                <div class="works-subtitle">
+                  <h4>-Banner-</h4>
+                  <p>/web /design</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works web-works">
+            <a href="web01.html">
+              <p>
+                <img src="images/design image/web01.jpg" alt="ウェブサイトの画像" />
+                <div class="works-subtitle web-works-subtitle">
+                  <h4>-Web-</h4>
+                  <p>/web /design /coding</p>
+                </div>
+              </p>
+            </a>
+          </div>
+
+          <div class="works web-works">
+            <a href="web02.html">
+              <p>
+                <img src="images/design image/web02.jpg" alt="ウェブサイトの画像" />
+                <div class="works-subtitle web-works-subtitle">
+                  <h4>-Web-</h4>
+                  <p>/web /design /coding</p>
+                </div>
+              </p>
+            </a>
+          </div>
+    
+          <div class="works web-works">
+            <a href="other.html">
+              <p>
+                <img src="images/design image/other01.jpg" alt="ウェブサイトの画像" />
+                <div class="works-subtitle web-works-subtitle">
+                  <h4>-Other-</h4>
+                  <p>/web /design /coding</p>
+                </div>
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="more">
+          <a href="works.html"><p>view<span>more</span></p></a>
+        </div>
+      </div>
+        <div class="contact-wrapper" id="contact">
+          <div class="title">
+            <h3>Contact</h3>
+            <p>お問い合わせ</p>
+          </div>
+          
+          <ul>
+            <li>〒341-0021</li>
+            <li>埼玉県三郷市さつき平1-3-2-505</li>
+            <li>090-5319-5576</li>
+            <li>sakurai3971828@gmail.com</li>
+          </ul>
+        </div>
+
+        <footer>
+          <p>@Sakurai Fumihiro</p>
+        </footer>
+
+    <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.4.1.min.js"
     ></script>
-      <script src="../beautiful-studio/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
